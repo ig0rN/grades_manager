@@ -11,7 +11,7 @@ class StudentController {
         }
         $student = new Student();
         $student = $student->getStudentsAndGrades($user);
-\dd($student->makeStatistic());
-        return $student->makeStatistic();
+
+        echo $student->makeStatistic();
     }
 }
