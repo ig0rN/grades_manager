@@ -1,0 +1,17 @@
+{
+    "name": "igornikolic",
+    "type": "grademanager",
+    "authors": [{
+        "name": "Igor Nikolic",
+        "email": "igorn995@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        },
+        "files": [
+            "App/Helpers/functions.php"
+        ]
+    }
+}
