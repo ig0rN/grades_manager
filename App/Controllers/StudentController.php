@@ -9,8 +9,9 @@ class StudentController {
         if(!is_numeric($user)) {
             die('you didnt enter valid number');
         }
-        $student = Student::getStudentsAndGrades($user);
-        
-        return (new JsonStringOutput)->load([$student])->format();
+        $student = new Student();
+        $student = $student->getStudentsAndGrades($user);
+\dd($student->makeStatistic());
+        return $student->makeStatistic();
     }
 }

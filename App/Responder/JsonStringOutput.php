@@ -5,16 +5,10 @@ use App\Interfaces\OutputInterface;
 
 class JsonStringOutput implements OutputInterface
 {
-    public $jsonOutpun;
 
     public function load($arrayOfData)
     {
-        $this->jsonOutpun = $arrayOfData;
-
-        return $this;
+        return json_encode($arrayOfData);
     }   
 
-    public function format() {
-        return json_encode($this->jsonOutpun);
-    }
 }

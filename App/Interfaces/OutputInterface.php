@@ -4,6 +4,5 @@ namespace App\Interfaces;
 
 interface OutputInterface
 {
-    public function load();
-    public function format();
+    public function load($arrayOfData);
 }
