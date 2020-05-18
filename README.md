@@ -1,4 +1,14 @@
-# Grades manager
+# Grades Manager
+
+## Description
+
+Custom MVC made with pure PHP
+
+When you visit domain.example/student/{id} you get an average grade of students
+
+There are two schools which make different calculation for average grade
+
+Also, one school returns JSON and second returns XML
 
 ## Installation guide
 
